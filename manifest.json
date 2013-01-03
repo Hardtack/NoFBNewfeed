@@ -1,0 +1,16 @@
+{
+    "name": "No FB Newfeed",
+        "version": "1.0",
+        "manifest_version": 2,
+        "description": "Removes FB's newsfeed",
+        "content_scripts":[
+            {
+                "matches": [
+                    "https://www.facebook.com/*",
+                    "http://www.facebook.com/*"
+                ],
+                "js":["jquery-1.8.3.js", "utils.js", "event.js"],
+                "run_at": "document_start"
+            }
+        ]
+}
